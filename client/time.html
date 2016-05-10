@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Quelle heure est-il ?</title>
+<style>
+body { font-family: sans-serif; padding: 20px; }
+h2 { color: #008 }
+form { background-color: #eee; padding: 5px 20px; border-radius: 5px; }
+label { display: inline-block; width: 8em; margin-bottom: 0.33em}
+input { width: 14em; }
+</style>
+
+<form action="/time">
+ <h2>Quelle heure est-il dans le monde ?</h2>
+ <label for="timezone">Fuseau Horaire : </label>
+ <select name="timezone" id="timezone">
+  <option value="Europe/Paris">UTC +2 -- Paris
+  <option value="Europe/London">UTC +1 -- Londres
+  <option value="Atlantic/Reykjavik">UTC +0 -- Reykjavik
+  <option value="Atlantic/Cape_Verde">UTC -1 -- Cap Vert
+  <option value="Atlantic/South_Georgia">UTC -2 -- &Icirc;les Sandwich
+  <option value="America/Sao_Paulo">UTC -3 -- Rio de Janeiro
+  <option value="America/New_York">UTC -4 -- New-York
+  <option value="America/Chicago">UTC -5 -- Chicago
+  <option value="America/Denver">UTC -6 -- Denver
+  <option value="America/Los_Angeles">UTC -7 -- San Francisco
+  <option value="America/Anchorage">UTC -8 -- Anchorage
+  <option value="America/Adak">UTC -9 -- &Icirc;les Aléoutiennes
+  <option value="US/Hawaii">UTC -10 -- Honolulu
+  <option value="Pacific/Auckland">UTC -11 -- Auckland
+  <option value="Asia/Kamchatka">UTC -12 -- Kamchatka
+  <option value="Pacific/Noumea">UTC +11 -- Nouméa
+  <option value="Australia/Brisbane">UTC +10 -- Brisbane
+  <option value="Asia/Tokyo">UTC +9 -- Tokyo
+  <option value="Hongkong">UTC +8 -- Hong Kong
+  <option value="Asia/Jakarta">UTC +7 -- Jakarta
+  <option value="Asia/Novosibirsk">UTC +6 -- Novosibirsk
+  <option value="Asia/Tashkent">UTC +5 -- Tashkent
+  <option value="Asia/Dubai">UTC +4 -- Dubai
+  <option value="Asia/Baghdad">UTC +3 -- Baghdad
+ </select>
+<br>
+<label for="color">Couleur :</label>
+<input name="color" id="color" value="#d80">
+<br>
+<label for="font-family">Police :</label>
+<input name="font-family" id="font-family" value="monospace">
+<br>
+<label for="font-size">Taille :</label>
+<input name="font-size" id="font-size" value="133%">
+<br>
+<label for="font-weight">Graisse :</label>
+<input name="font-weight" id="font-weight" value="bold">
+<br>
+<label for="letter-spacing">Espacement :</label>
+<input name="letter-spacing" id="letter-spacing" value="0.1em">
+<br>
+<input type="submit" value="Envoyer">
+</form>

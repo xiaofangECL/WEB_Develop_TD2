@@ -10,7 +10,7 @@ import pytz
 
 # on adhère aux conventions françaises
 import locale
-locale.setlocale(locale.LC_ALL, 'french')
+locale.setlocale(locale.LC_ALL, 'fr_BE') # for MAC OS
 
 #
 # Définition du nouveau handler
